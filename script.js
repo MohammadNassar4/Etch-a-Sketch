@@ -11,3 +11,12 @@ function createGrid(size) {
     }
 }
 
+function addHoverEffect() {
+    let gridItem = document.querySelectorAll(".grid-item");
+    gridItem.forEach(item => {
+        item.addEventListener("mouseover", () => {
+            item.style.backgroundColor = "black";
+        });
+    });
+}
+
